@@ -1,0 +1,12 @@
+.phones {
+    -webkit-transition: text-shadow,font-weight 0.1s ease-out;
+    -moz-transition: text-shadow,font-weight 0.1s ease-out;
+    -o-transition: text-shadow,font-weight 0.1s ease-out;
+    transition: text-shadow,font-weight 0.1s ease-out;
+}
+
+.phones:hover {
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0px 0px 1px;
+}

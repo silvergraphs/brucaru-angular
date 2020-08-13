@@ -1,0 +1,23 @@
+<div align="center">
+    <h1>{{ this.title }}</h1>
+<p><label>Username
+    <input (keydown)="escribir($event)" (input)="escribir($event)" type="text" name="user" id="" [(ngModel)]="user">
+</label></p>
+
+<p>
+<label>Password
+    <input (keydown)="escribir($event)" type="password" name="pass" id="" [(ngModel)]="pass">
+</label></p>
+
+<p><button (click)="login()">Login</button></p>
+
+<img src="assets/google.gif" (mouseenter)="cambiarTamano($event,true)" (mouseleave)="cambiarTamano($event,false)" alt="">
+
+<!-- <h2>Main Menu</h2>
+<div [ngSwitch]="menu"> 
+    <p *ngSwitchCase="services">Here we list our services</p>
+    <p *ngSwitchCase="downloads">This is the download section, enjoy</p>
+    <p *ngSwitchCase="devices">Check our devices list</p>
+    <p *ngSwitchDefault="home">Welcome to Angular App</p>
+</div> -->
+</div>

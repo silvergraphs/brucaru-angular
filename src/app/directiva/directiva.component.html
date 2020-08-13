@@ -1,0 +1,20 @@
+<!-- <div *ngIf="!loading" align=center>
+    <p>Finished load!</p>
+</div>
+
+<p><img *ngIf="loading" src="assets/loading.gif" alt=""></p>
+
+<p align=center><button (click)="alternate()">Show Loader</button></p> -->
+<!-- 
+<div *ngFor="let name of names">
+    <p>Hello, my name is: {{ name }}</p>
+</div> -->
+
+<div align=center>
+<h1>List of phones</h1>
+<h2>Here we list the phones on stock</h2>
+<h3>* SKUs are included</h3>
+<div *ngFor="let product of products">
+    <p class="phones" (click)="selected(product.brand,product.model)">{{product.brand}} {{product.model}} - {{product.stock}} on stock - SKU: {{product.sku}}</p>
+</div>
+</div>
